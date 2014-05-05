@@ -1,19 +1,19 @@
 body {
 }
 
-.section-one h1, h3 {
+/*.section-one h1, h3 {
 	font-style: bold;
 	background-color: none;
 	color: black;
 	position: float;
 	text-align: center;
 	top: 150px;
-/*	bottom:90px;
+	bottom:90px;
 	left: 200px;
 	padding:10px;
-	background-color: #232323;*/
+	background-color: #232323;
 }
-
+*/
 .section-one {
 	width: 100%;
 	position: relative;
@@ -30,6 +30,14 @@ body {
 	background-position: 100% 0;
 	position: relative;
 	min-height: 1080px;
+}
+
+#home article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  width: 100%;
 }
 
 #about {
