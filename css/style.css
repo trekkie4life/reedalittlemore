@@ -1,5 +1,6 @@
-/* CSS Document */
-body{font-family: 'Changa One', cursive;margin:0;padding:0}
+body {
+	font-family: 'Changa One', cursive;margin:0;padding:0;
+}
 
 #home {
 	background: url("../img/home.jpg");
@@ -7,45 +8,44 @@ body{font-family: 'Changa One', cursive;margin:0;padding:0}
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	position:relative;
-	min-height:1080px;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	position: relative;
+	min-height: 1080px;
 }
 
 #about {
-
 	background: url("../img/about.jpg");
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	position:relative;
-	min-height:1080px;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	position: relative;
+	min-height: 1080px;
 }
-#blog {
 
+#blog {
 	background: url("../img/blog.jpg");
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	position:relative;
-	min-height:1080px;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	position: relative;
+	min-height: 1080px;
 }
-#contact {
 
+#contact {
 	background: url("../img/contact.jpg");
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	position:relative;
-	min-height:1080px;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	position: relative;
+	min-height: 1080px;
 }
