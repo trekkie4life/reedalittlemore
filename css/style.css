@@ -1,5 +1,23 @@
 body {
-	font-family: 'Changa One', cursive;margin:0;padding:0;
+}
+
+.section-one h1, h3 {
+	font-style: bold;
+	background-color: none;
+	color: black;
+	position: float;
+	text-align: center;
+	top: 150px;
+/*	bottom:90px;
+	left: 200px;
+	padding:10px;
+	background-color: #232323;*/
+}
+
+.section-one {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 #home {
