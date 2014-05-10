@@ -17,7 +17,7 @@ body {
 .section-one {
 	width: 100%;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #home {
@@ -29,15 +29,27 @@ body {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 1080px;
+	min-height: 800px;
 }
 
 #home article {
-  height: 458px;
+  height: 100%;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 23%;
   width: 100%;
+  color: white;
+}
+
+#home h1 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-family: 'Quicksand', helvetica;
+	font-size: 3em;
+}
+
+#home h2 {
+	font-family: 'Quicksand', helvetica;
 }
 
 #about {
@@ -49,7 +61,17 @@ body {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 1080px;
+	min-height: 800px;
+}
+
+#about article {
+  height: 458px;
+  position: absolute;
+  text-align: justify;
+  top: 30%;
+  width: 50%;
+  padding: 0 25%;
+  color: black;
 }
 
 #blog {
@@ -61,7 +83,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 1080px;
+	min-height: 600px;
 }
 
 #contact {
@@ -73,5 +95,5 @@ body {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 1080px;
+	min-height: 700px;
 }
