@@ -10,29 +10,33 @@ body {
 
 .container {
 	font-family: 'Quicksand', helvetica;
-	max-width: 90%;
+	width: 90%;
+	max-width: 1000px;
+	max-height: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	padding:  20px 100px 20px
+	/*padding:  20px 100px 20px*/
 }
 
 .container h2 {
-	color: white;
+	color: blue;
+	font-weight: bold;
 	margin-top: 4%;
 	margin-bottom: 2%;
 }
 
 .container p {
-	color: white;
-	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+	font-size: 22px;
 	line-height: 30px;
 	text-align: center;
-	margin-bottom: 0;
+	margin-bottom: 1%;
 }
 
 
 #home {
-	background: url("../img/home.jpg");
+	background: url("../img/home.jpg") fixed center;
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -124,14 +128,15 @@ body {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0);
 }
 
 #all-projects ul {
 	list-style: none;
 	max-width: 100%;
 	margin-top: 0;
-	padding: 0 0 25px 0;
+	margin-bottom: 0;
+	padding-left: 0;
 	text-align: center;
 }
 
