@@ -155,7 +155,7 @@ a.image {
 }
 
 a.image:hover + a.info {
-	background: rgba(255, 0, 255, 0.1);
+	background: rgba(255, 0, 255, 0.2);
 	transition: 0.5s ease;
 }
 
@@ -170,7 +170,7 @@ a.info {
 }
 
 a.info:hover {
-	background: rgba(255, 0, 255, 0.1);
+	background: rgba(255, 0, 255, 0.2);
 	transition: 0.5s ease;
 }
 
