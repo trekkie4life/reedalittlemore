@@ -1,24 +1,35 @@
 body {
 }
 
-/*.section-one h1, h3 {
-	font-style: bold;
-	background-color: none;
-	color: black;
-	position: float;
-	text-align: center;
-	top: 150px;
-	bottom:90px;
-	left: 200px;
-	padding:10px;
-	background-color: #232323;
-}
-*/
+
 .section-one {
 	width: 100%;
 	position: relative;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
+
+.container {
+	font-family: 'Quicksand', helvetica;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding:  20px 100px 20px
+}
+
+.container h2 {
+	color: white;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.container p {
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
 
 #home {
 	background: url("../img/home.jpg");
@@ -30,26 +41,39 @@ body {
 	background-position: 100% 0;
 	position: relative;
 	min-height: 800px;
+	font-family: 'Quicksand', helvetica;
 }
 
-#home article {
+#header {
   height: 100%;
   position: absolute;
   text-align: center;
-  top: 23%;
+  top: 15%;
   width: 100%;
   color: white;
 }
 
-#home h1 {
+#header h1 {
 	padding-bottom: 0;
 	margin-bottom: 0;
-	font-family: 'Quicksand', helvetica;
+	/*font-family: 'Quicksand', helvetica;*/
 	font-size: 3em;
 }
 
-#home h2 {
-	font-family: 'Quicksand', helvetica;
+#header h2 {
+	/*font-family: 'Quicksand', helvetica;*/
+	margin-bottom: 40px;
+}
+
+#header a {
+	text-decoration: none;
+	color: white;
+	transition: 0.65s ease;
+}
+
+#header a:hover {
+	color: magenta;
+	transition: 0.65s ease;
 }
 
 #about {
@@ -65,20 +89,27 @@ body {
 }
 
 #about article {
-  height: 27%;
+  height: 100%;
+  width: 100%;
   border-radius: 4px;
   position: absolute;
   text-align: justify;
-  top: 30%;
-  width: 46%;
   padding: 3% 3%;
-  margin: 0 22%;
   color: white;
-  background: rgba(0, 113, 194, 0.2);
+  background: rgba(0, 0, 0, 0.4); /* first 3 are for RGBa color, last is for opacity */
 }
 
-#blog {
-	background: url("../img/blog.jpg");
+#about article p {
+  top: 30%;
+	width: 46%;
+	margin: 0 22%;
+	color: white;
+}
+
+/**********  PROJECTS PORTION  ../img/blog.jpg**********/
+
+#all-projects {
+	background: url("../img/about.jpg");
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -88,6 +119,67 @@ body {
 	position: relative;
 	min-height: 800px;
 }
+
+#all-projects article {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#all-projects ul {
+	list-style: none;
+	max-width: 100%;
+	margin-top: 0;
+	padding: 0 0 25px 0;
+	text-align: center;
+}
+
+.proj {
+	display: inline-block;
+	width: 300px;
+	height: 270px;
+	margin: 25px auto;
+	margin-right: 20px;
+	position: relative;
+}
+
+.proj:nth-child(3), .proj:nth-child(4) {
+	margin-right: 0;
+}
+
+a.image {
+	display: block;
+	height: 200px;
+	transition: 0.5s ease;
+}
+
+a.image:hover + a.info {
+	background: rgba(255, 0, 255, 0.1);
+	transition: 0.5s ease;
+}
+
+a.info {
+	text-decoration: none;
+	display:block;
+	width: 300px;
+	padding: 4px 0 10px 0;
+	background: rgba(100, 100, 100, 0.4);
+	transition: 0.5s ease;
+	color: white;
+}
+
+a.info:hover {
+	background: rgba(255, 0, 255, 0.1);
+	transition: 0.5s ease;
+}
+
+a.info span {
+	margin-top:0;
+	padding-top: 8px;
+	display: block;
+}
+
 
 #contact {
 	background: url("../img/contact.jpg");
@@ -99,4 +191,17 @@ body {
 	background-position: 100% 0;
 	position: relative;
 	min-height: 800px;
+}
+
+#contact article {
+  height: 100%;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  color: white;
+}
+
+#contact article h2 {
+	margin-left: 8%;
+	font-family: 'Quicksand', helvetica;
 }
