@@ -10,6 +10,7 @@ jQuery(document).ready(function(){
 			 $bgObj.css({ backgroundPosition: coords });
 
 		});
-
 	});
+
+	$('#header').localScroll({duration:800});
 });
