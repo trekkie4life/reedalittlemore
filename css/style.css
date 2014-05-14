@@ -69,12 +69,10 @@ body {
 #header h1 {
 	padding-bottom: 0;
 	margin-bottom: 0;
-	/*font-family: 'Quicksand', helvetica;*/
 	font-size: 3em;
 }
 
 #header h2 {
-	/*font-family: 'Quicksand', helvetica;*/
 	margin-bottom: 40px;
 }
 
@@ -113,7 +111,7 @@ body {
   text-align: justify;
   padding: 3% 3%;
   color: white;
-  background: rgba(0, 0, 0, 0.4); /* first 3 are for RGBa color, last is for opacity */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #about article p {
@@ -222,6 +220,7 @@ a.info span {
   height: 100%;
   position: absolute;
   width: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #contact.container {
