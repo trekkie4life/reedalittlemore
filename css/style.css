@@ -82,13 +82,17 @@ body#project-page {
 }
 
 #header a {
+	background: rgba(100, 100, 100, 0.4);
+	border-radius: 4px;
+	padding: 10px 12px 11px 14px;
+	transition: 0.5s ease;
 	text-decoration: none;
 	color: white;
 	transition: 0.65s ease;
 }
 
 #header a:hover {
-	color: magenta;
+	background: rgba(255, 0, 255, 0.2);
 	transition: 0.65s ease;
 }
 
@@ -370,6 +374,10 @@ em {
 
 @media screen and (max-width: 891px) {
 
+	#header {
+		top: 8%;
+	}
+
 	ul#contact-icons {
 		width: 90%;
 	}
@@ -402,6 +410,10 @@ em {
 /******************** SMALL RESOLUTION ********************/
 
 @media screen and (max-width: 543px) {
+
+	#header h1 {
+		font-size: 2.6em;
+	}
 
 	#all-projects {
 		height: 1600px;
