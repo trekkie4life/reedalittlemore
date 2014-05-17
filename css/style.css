@@ -14,10 +14,6 @@
 	margin-right: auto;
 }
 
-body#project-page {
-	background: #24478F;
-}
-
 .container h1 {
 	color: white;
 	font-weight: bold;
@@ -290,6 +286,9 @@ a.contact-image:hover {
 
 /**********  PROJECT PAGES  **********/
 
+body#project-page {
+	background: #204561;
+}
 
 img {
 	max-width: 100%;
@@ -319,8 +318,6 @@ img {
  	color: cyan;
 	font-size: 30px;
 	margin: 30px auto 0 auto;
-	/*display: block;*/
-	/*text-align: center;*/
 	text-decoration: none;
 	transition: 0.65s ease;
 }
