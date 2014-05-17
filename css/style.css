@@ -14,6 +14,10 @@
 	margin-right: auto;
 }
 
+body#project-page {
+	background: #24478F;
+}
+
 .container h1 {
 	color: white;
 	font-weight: bold;
@@ -250,4 +254,68 @@ a.contact-image:hover {
 #footer a h3:hover {
 	color: magenta;
 	transition: 0.65s ease;
+}
+
+
+/**********  PROJECT PAGES  **********/
+
+
+img {
+	max-width: 100%;
+}
+
+#project-page-image {
+	display: block;
+	margin: 50px auto 25px auto;
+	backgroud-size: contain;
+	text-align: center;
+}
+
+#description , #back, #technology, #download {
+	font-family: 'Quicksand', helvetica;
+	width: 95%;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+
+#description p {
+	text-align: justify;
+	color: white;
+}
+
+#description a, #back a, #download a {
+ 	color: cyan;
+	font-size: 30px;
+	margin: 30px auto 0 auto;
+	/*display: block;*/
+	/*text-align: center;*/
+	text-decoration: none;
+	transition: 0.65s ease;
+}
+
+#download a {
+	font-size: 20px;
+}
+
+#back a {
+	font-size: 20px;
+	margin: 20px auto;
+	padding-bottom: 50px;
+}
+
+#description a:hover, #back a:hover, #download a:hover {
+	color: magenta;
+	transition: 0.65s ease;
+}
+
+#technology {
+	width: 100%;
+	color: #FF8533;
+	margin: 25px 0;
+}
+
+em {
+	font-style: normal;
+	color: gold;
 }
