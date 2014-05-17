@@ -26,7 +26,7 @@ body#project-page {
 }
 
 .container p, h2 {
-	color: blue;
+	color: white;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 30px;
@@ -186,7 +186,7 @@ a.info span {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 650px;
+	min-height: 625px;
 }
 
 #contact article {
@@ -234,7 +234,7 @@ a.contact-image:hover {
 #footer {
 	width: 100%;
 	padding: 0;
-	margin-top: 200px;
+	bottom: 0px;
 	text-align: center;
 }
 
@@ -243,10 +243,11 @@ a.contact-image:hover {
 }
 
 #footer h3 {
+	color: white;
 	font-size: 20px;
 }
 
-#footer a h3 {
+#footer a h3, h4 {
 	color: white;
 	transition: 0.65s ease;
 }
@@ -318,4 +319,71 @@ img {
 em {
 	font-style: normal;
 	color: gold;
+}
+
+
+/*******************************************************/
+/******************** MEDIA QUERIES ********************/
+/*******************************************************/
+
+
+
+/******************** LARGE RESOLUTION ********************/
+
+@media screen and (max-width: 1055px) {
+
+	.container ul {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.proj:nth-child(3) {
+		margin-right: 20px;
+	}
+
+
+	.proj:nth-child(2), .proj:nth-child(4) {
+		margin-right: 0;
+	}
+}
+
+
+/******************** MEDIUM RESOLUTION ********************/
+
+@media screen and (max-width: 771px) {
+
+	#all-projects {
+		height: 1500px;
+	}
+
+	#all-projects ul {
+		max-width: 80%;
+	}
+
+	.proj, .proj:nth-child(3) {
+		margin-right: 0;
+	}
+
+
+
+	.container ul {
+		padding: 0;
+		width: 90%;
+	}
+}
+
+
+/******************** SMALL RESOLUTION ********************/
+
+@media screen and (max-width: 672px) {
+
+/*	#all-projects {
+		height: 1500px;
+	}*/
+
+/*	.proj, .proj:nth-child(3) {
+		margin-left: 0;
+		margin-right: 0;
+	}*/
+
 }
