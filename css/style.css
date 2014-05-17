@@ -347,6 +347,17 @@ em {
 	}
 }
 
+/******************** MEDIUM RESOLUTION ********************/
+
+
+
+@media screen and (max-width: 891px) {
+
+	ul#contact-icons {
+		width: 90%;
+	}
+}
+
 
 /******************** MEDIUM RESOLUTION ********************/
 
@@ -364,8 +375,6 @@ em {
 		margin-right: 0;
 	}
 
-
-
 	.container ul {
 		padding: 0;
 		width: 90%;
@@ -375,15 +384,14 @@ em {
 
 /******************** SMALL RESOLUTION ********************/
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 543px) {
 
-/*	#all-projects {
-		height: 1500px;
-	}*/
+	ul#contact-icons {
+		margin-top: 10px;
+		width: 65%;
+	}
 
-/*	.proj, .proj:nth-child(3) {
-		margin-left: 0;
-		margin-right: 0;
-	}*/
-
+	li.contact-me {
+		margin-top: 25px;
+	}
 }
