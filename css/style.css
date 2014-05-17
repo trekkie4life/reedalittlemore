@@ -105,7 +105,7 @@ body#project-page {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 800px;
+	min-height: 1000px;
 }
 
 #all-projects article {
@@ -171,6 +171,23 @@ a.info span {
 	margin-top:0;
 	padding-top: 8px;
 	display: block;
+}
+
+#contact-me {
+	text-align: center;
+	margin: 44px auto;
+}
+
+#contact-me a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	transition: 0.65s ease;
+}
+
+#contact-me a:hover {
+	color: cyan;
+	transition: 0.65s ease;
 }
 
 
@@ -385,6 +402,10 @@ em {
 /******************** SMALL RESOLUTION ********************/
 
 @media screen and (max-width: 543px) {
+
+	#all-projects {
+		height: 1600px;
+	}
 
 	ul#contact-icons {
 		margin-top: 10px;

@@ -13,14 +13,6 @@ jQuery(document).ready(function(){
 	// });
 
 	$('#header').localScroll({duration:800});
+	$('#contact-me').localScroll({duration:800});
 
-	// $("img#cleanr").hover(function(){
-	//     $(this).attr("src", function(index, attr){
-	//         return attr.replace("1.jpg", "2.jpg");
-	//     });
-	// }, function(){
-	//     $(this).attr("src", function(index, attr){
-	//         return attr.replace("2.jpg", "1.jpg");
-	//     });
-	// });
 });
