@@ -82,7 +82,7 @@ body#project-page {
 }
 
 #header a {
-	background: rgba(100, 100, 100, 0.4);
+	background: rgba(255, 0, 255, 0.2);
 	border-radius: 4px;
 	padding: 10px 12px 11px 14px;
 	transition: 0.5s ease;
@@ -92,7 +92,7 @@ body#project-page {
 }
 
 #header a:hover {
-	background: rgba(255, 0, 255, 0.2);
+	background: rgba(255, 0, 255, 0.6);
 	transition: 0.65s ease;
 }
 
@@ -152,7 +152,8 @@ a.image {
 }
 
 a.image:hover + a.info {
-	background: rgba(255, 0, 255, 0.2);
+	/*background: rgba(255, 0, 255, 0.2);*/
+	background: rgba(0, 255, 255, 0.45);
 	transition: 0.5s ease;
 }
 
@@ -167,7 +168,8 @@ a.info {
 }
 
 a.info:hover {
-	background: rgba(255, 0, 255, 0.2);
+	/*background: rgba(255, 0, 255, 0.2);*/
+	background: rgba(0, 255, 255, 0.45);
 	transition: 0.5s ease;
 }
 
@@ -187,12 +189,16 @@ a.info span {
 	text-decoration: none;
 	color: white;
 	transition: 0.65s ease;
+	background: rgba(0, 255, 255, 0.4);
+	border-radius: 4px;
+	padding: 10px 12px 11px 14px;
 }
 
 #contact-me a:hover {
-	color: cyan;
+	background: rgba(0, 255, 255, 0.7);
 	transition: 0.65s ease;
 }
+
 
 
 /**********  CONTACT ME PORTION  **********/
@@ -235,7 +241,7 @@ a.info span {
 }
 
 a.contact-image {
-	border-radius: 2px;
+	border-radius: 4px;
 	display: block;
 	width: 64px;
 	height: 64px;
@@ -244,7 +250,7 @@ a.contact-image {
 }
 
 a.contact-image:hover {
-	background: rgba(255, 0, 255, 0.2);
+	background: rgba(255, 0, 255, 0.35);
 	transition: 0.5s ease;
 }
 
