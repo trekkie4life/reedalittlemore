@@ -22,7 +22,7 @@
 }
 
 .container p, h2 {
-	color: blue;
+	color: white;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 30px;
@@ -50,7 +50,7 @@
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 800px;
+	min-height: 1000px;
 	font-family: 'Quicksand', helvetica;
 }
 
@@ -78,13 +78,17 @@
 }
 
 #header a {
+	background: rgba(255, 0, 255, 0.2);
+	border-radius: 4px;
+	padding: 10px 12px 11px 14px;
+	transition: 0.5s ease;
 	text-decoration: none;
 	color: white;
 	transition: 0.65s ease;
 }
 
 #header a:hover {
-	color: magenta;
+	background: rgba(255, 0, 255, 0.6);
 	transition: 0.65s ease;
 }
 
@@ -101,7 +105,7 @@
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 800px;
+	min-height: 1000px;
 }
 
 #all-projects article {
@@ -126,8 +130,7 @@
 
 .proj {
 	display: inline-block;
-	width: 300px;
-	height: 270px;
+	max-width: 300px;
 	margin: 25px auto;
 	margin-right: 20px;
 	position: relative;
@@ -139,19 +142,19 @@
 
 a.image {
 	display: block;
-	height: 200px;
 	transition: 0.5s ease;
 }
 
 a.image:hover + a.info {
-	background: rgba(255, 0, 255, 0.2);
+	background: rgba(0, 255, 255, 0.45);
 	transition: 0.5s ease;
 }
 
 a.info {
 	text-decoration: none;
 	display:block;
-	width: 300px;
+	margin: -5px auto 0 auto;
+	max-width: 300px;
 	padding: 4px 0 10px 0;
 	background: rgba(100, 100, 100, 0.4);
 	transition: 0.5s ease;
@@ -159,7 +162,7 @@ a.info {
 }
 
 a.info:hover {
-	background: rgba(255, 0, 255, 0.2);
+	background: rgba(0, 255, 255, 0.45);
 	transition: 0.5s ease;
 }
 
@@ -168,6 +171,27 @@ a.info span {
 	padding-top: 8px;
 	display: block;
 }
+
+#contact-me {
+	text-align: center;
+	margin: 44px auto;
+}
+
+#contact-me a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	transition: 0.65s ease;
+	background: rgba(0, 255, 255, 0.4);
+	border-radius: 4px;
+	padding: 10px 12px 11px 14px;
+}
+
+#contact-me a:hover {
+	background: rgba(0, 255, 255, 0.7);
+	transition: 0.65s ease;
+}
+
 
 
 /**********  CONTACT ME PORTION  **********/
@@ -182,7 +206,7 @@ a.info span {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 800px;
+	min-height: 625px;
 }
 
 #contact article {
@@ -210,7 +234,7 @@ a.info span {
 }
 
 a.contact-image {
-	border-radius: 2px;
+	border-radius: 4px;
 	display: block;
 	width: 64px;
 	height: 64px;
@@ -219,7 +243,7 @@ a.contact-image {
 }
 
 a.contact-image:hover {
-	background: rgba(255, 0, 255, 0.2);
+	background: rgba(255, 0, 255, 0.35);
 	transition: 0.5s ease;
 }
 
@@ -228,9 +252,11 @@ a.contact-image:hover {
 }
 
 #footer {
-	width: 100%;
+	position: absolute;
+	width: inherit;
+	max-width: 1000px;
 	padding: 0;
-	margin-top: 200px;
+	bottom: 44px;
 	text-align: center;
 }
 
@@ -239,10 +265,12 @@ a.contact-image:hover {
 }
 
 #footer h3 {
+
+	color: white;
 	font-size: 20px;
 }
 
-#footer a h3 {
+#footer a h3, h4 {
 	color: white;
 	transition: 0.65s ease;
 }
@@ -250,4 +278,191 @@ a.contact-image:hover {
 #footer a h3:hover {
 	color: magenta;
 	transition: 0.65s ease;
+}
+
+
+/**********  PROJECT PAGES  **********/
+
+body#project-page {
+	background: #204561;
+}
+
+img {
+	max-width: 100%;
+}
+
+#project-page-image {
+	display: block;
+	margin: 50px auto 25px auto;
+	backgroud-size: contain;
+	text-align: center;
+}
+
+#description , #back, #technology, #download {
+	font-family: 'Quicksand', helvetica;
+	width: 95%;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+
+#description p {
+	text-align: justify;
+	color: white;
+}
+
+#description a, #back a, #download a {
+ 	color: cyan;
+	font-size: 30px;
+	margin: 30px auto 0 auto;
+	text-decoration: none;
+	transition: 0.65s ease;
+}
+
+#download a {
+	font-size: 20px;
+}
+
+#back a {
+	font-size: 20px;
+	margin: 20px auto;
+	padding-bottom: 50px;
+}
+
+#description a:hover, #back a:hover, #download a:hover {
+	color: magenta;
+	transition: 0.65s ease;
+}
+
+#technology {
+	width: 100%;
+	color: #FF8533;
+	margin: 25px 0;
+}
+
+em {
+	font-style: normal;
+	color: gold;
+}
+
+
+/*******************************************************/
+/******************** MEDIA QUERIES ********************/
+/*******************************************************/
+
+
+/******************** LARGE RESOLUTION ********************/
+
+@media screen and (max-width: 1055px) {
+
+	.container ul {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.proj:nth-child(3) {
+		margin-right: 20px;
+	}
+
+
+	.proj:nth-child(2), .proj:nth-child(4) {
+		margin-right: 0;
+	}
+}
+
+/******************** MEDIUM RESOLUTION ********************/
+
+
+
+@media screen and (max-width: 891px) {
+
+	#header {
+		top: 8%;
+	}
+
+	ul#contact-icons {
+		width: 90%;
+	}
+}
+
+
+/******************** MEDIUM RESOLUTION ********************/
+
+@media screen and (max-width: 771px) {
+
+
+	#all-projects {
+		height: 1600px;
+	}
+
+	#all-projects ul {
+		max-width: 80%;
+	}
+
+	.proj, .proj:nth-child(3) {
+		margin-right: 0;
+	}
+
+	.container ul {
+		padding: 0;
+		width: 90%;
+	}
+}
+
+
+/******************** SMALL RESOLUTION ********************/
+
+@media screen and (max-width: 570px) {
+
+	#home {
+		background: url("../img/home-small.jpg") fixed center;
+		background-attachment: fixed;
+		background-origin: initial;
+		background-clip: initial;
+		background-size: 800px 1000px;
+		background-repeat: no-repeat;
+		background-position: 100% 0;
+		position: relative;
+		max-height: 600px;
+		font-family: 'Quicksand', helvetica;
+	}
+
+	#header h1 {
+		font-size: 2.6em;
+	}
+
+	#all-projects {
+		background: url("../img/about.jpg") center;
+		background-attachment: fixed;
+		background-origin: initial;
+		background-clip: initial;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 80% 0;
+		position: relative;
+		min-height: 1000px;
+	}
+
+	#all-projects {
+		height: 1500px;
+	}
+
+	#contact {
+		background: url("../img/contact-small1.jpg") center;
+		min-height: 550px;
+		max-height: 575px;
+	}
+
+	ul#contact-icons {
+		margin-top: 10px;
+		width: 65%;
+	}
+
+	li.contact-me {
+		margin-top: 25px;
+	}
+
+	#footer {
+		bottom: 4px;
+	}
 }
