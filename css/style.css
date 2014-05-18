@@ -50,7 +50,7 @@
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
-	min-height: 800px;
+	min-height: 1000px;
 	font-family: 'Quicksand', helvetica;
 }
 
@@ -351,7 +351,6 @@ em {
 /*******************************************************/
 
 
-
 /******************** LARGE RESOLUTION ********************/
 
 @media screen and (max-width: 1055px) {
@@ -391,6 +390,7 @@ em {
 
 @media screen and (max-width: 771px) {
 
+
 	#all-projects {
 		height: 1600px;
 	}
@@ -412,14 +412,45 @@ em {
 
 /******************** SMALL RESOLUTION ********************/
 
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 570px) {
+
+	#home {
+		background: url("../img/home-small.jpg") fixed center;
+		background-attachment: fixed;
+		background-origin: initial;
+		background-clip: initial;
+		background-size: 800px 1000px;
+		background-repeat: no-repeat;
+		background-position: 100% 0;
+		position: relative;
+		max-height: 600px;
+		font-family: 'Quicksand', helvetica;
+	}
 
 	#header h1 {
 		font-size: 2.6em;
 	}
 
 	#all-projects {
-		height: 1600px;
+		background: url("../img/about.jpg") center;
+		background-attachment: fixed;
+		background-origin: initial;
+		background-clip: initial;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 80% 0;
+		position: relative;
+		min-height: 1000px;
+	}
+
+	#all-projects {
+		height: 1500px;
+	}
+
+	#contact {
+		background: url("../img/contact-small1.jpg") center;
+		min-height: 550px;
+		max-height: 575px;
 	}
 
 	ul#contact-icons {
@@ -430,5 +461,8 @@ em {
 	li.contact-me {
 		margin-top: 25px;
 	}
-}
 
+	#footer {
+		bottom: 4px;
+	}
+}
