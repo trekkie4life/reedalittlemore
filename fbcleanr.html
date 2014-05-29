@@ -9,6 +9,17 @@
 		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-51131246-1', 'reedalittlemore.com');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 
 	<body id="project-page">
@@ -21,9 +32,9 @@
 
 			<div id="description">
 				<a href="https://chrome.google.com/webstore/detail/fb-cleanr/olmjneflifbgjgbecjjbfkihpomahomf">FB Cleanr</a>
-				<p><em>The problem:</em> Facebook's latest update brings up ads galore and clutters the screen</p>
-				<p>I built this for myself because I was tired of having such a busy page when I went to Facebook. My eye was being distracted and I wanted to only have the information I want to see on the screen.</p>
-				<p>Because Facebook disables jQuery on it's screen and also BFCache'ing it was difficult to find a way to always maintain the new 'ad-free' state invoked by the extension. The workaround this was to have Chrome's API help solve some of it by not only making sure the ads were removed on initial load but also if you switch to another tab and then switch back to the original [Facebook] tab.</p>
+				<p><em>The problem:</em> Facebook's latest update clutters your screen with unwanted ads</p>
+				<p>Originally built for personal use because I was tired of having such a busy page when I went to Facebook, I have released the extension for free to all. I'm sure I'm not the only person who doesn't like ads or clutter and only wants to only have relevant information on the screen.</p>
+				<p>Because Facebook disables jQuery and also BFCache'ing, it was difficult to find a way to always maintain the new 'ad-free' state invoked by the extension. The way around this was to have Chrome's API monitor the Facebook tab. If the tab went inactive, then became active again, the API would fire the javascript to re-remove the ads.</p>
 			</div>
 
 			<div id="download">
