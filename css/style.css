@@ -42,7 +42,7 @@
 
 
 #home {
-	background: url("../img/home.jpg") fixed center;
+	background: url("../img/home.jpg") center center fixed;
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -51,6 +51,8 @@
 	background-position: 100% 0;
 	position: relative;
 	min-height: 1000px;
+	height: 100%;
+	width: 100%;
 	font-family: 'Quicksand', helvetica;
 }
 
